@@ -3,20 +3,20 @@ import json
 
 
 class Livro:
-    def __init__(self, nome, author, data_lancamento: date):
+    def __init__(self, nome: str, autor: str, data_lancamento: date):
         self.nome = nome
-        self.author = author
+        self.autor = autor
         self.data_lancamento = data_lancamento
 
-    def criar_livro(self, nome, author, data_lancamento: datetime):
+    def criar_livro(self, nome: str, autor: str, data_lancamento: datetime):
         print(
-            f"Criando livro com nome {nome}, author {author}, data de lançamento {data_lancamento}"
+            f"Criando livro com nome {nome}, autor {autor}, data de lançamento {data_lancamento}"
         )
 
         # Dados do livro organizados em um dicionário
         livro = {
             "titulo": self.nome,
-            "author": self.author,
+            "autor": self.autor,
             "data_lancamento": self.data_lancamento,
         }
 
