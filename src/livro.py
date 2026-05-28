@@ -20,7 +20,19 @@ class Livro:
             "data_lancamento": self.data_lancamento,
         }
 
-        with open("livro.json", "w", encoding="utf-8") as arquivo:
+        with open("livro.json", "a", encoding="utf-8") as arquivo:
             json.dump(livro, arquivo, ensure_ascii=False, indent=4)
 
         print("Livro salvo com sucesso!")
+
+    def pegar_author(self):
+        print("Pegando todos os autores")
+
+        livro = json.loads(arquivo)
+
+        print("Autores:")
+        for autor in livro["autores"]:
+            print(f"- {autor['nome']}")
+
+    def pegar_tudo(self):
+        print("")
