@@ -25,14 +25,14 @@ class Livro:
 
         print("Livro salvo com sucesso!")
 
-    def pegar_author(self):
-        print("Pegando todos os autores")
+    def pegar_autores(self):
+        with open("livro.json", "r", encoding="utf-8") as arquivo:
+            dados = json.load(arquivo)
 
-        livro = json.loads(arquivo)
+        autores = [item["autor"] for item in dados["autores"]]
+        print(autores)
 
-        print("Autores:")
-        for autor in livro["autores"]:
-            print(f"- {autor['nome']}")
-
-    def pegar_tudo(self):
-        print("")
+    def imprimir_livros(self):
+        with open("livro.json", "r") as f:
+            dados = json.load(f)
+        print(json.dumps(dados, indent=4, ensure_ascii=False))
