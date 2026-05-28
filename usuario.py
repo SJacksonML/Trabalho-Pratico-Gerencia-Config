@@ -6,8 +6,8 @@ class Usuario:
         self.email = email
         self.senha = senha
 
-    def cadastrar_usuario(self):
-        print(f"Usuário cadastrado com sucesso: {self.nome}")
+    def cadastrar_usuario(self, nome, email, senha):
+        print(f"Usuário cadastrado com sucesso: {nome}")
 
         usuario = {
             "Usuario": self.nome,
