@@ -6,14 +6,16 @@ class Usuario:
         self.email = email
         self.senha = senha
 
-    def cadastrar_usuario(self, nome, email, senha):
-        print(f"Usuário cadastrado com sucesso: {nome}")
+    def cadastrar_usuario(self):
+        print(f"Usuário cadastrado com sucesso: {self.nome}")
 
         usuario = {
             "Usuario": self.nome,
             "Email": self.email,
             "Senha": self.senha
         }
-
-        with open("salvar_usuario.json", "w", encoding="utf") as arquivo:
-            json.dump(usuario, arquivo, ensure_ascii=False, indent=4,)
+        try:
+            with open("salvar_usuario.json", "w", encoding="utf") as arquivo:
+                json.dump(usuario, arquivo, ensure_ascii=False, indent=4,)
+        except:
+            ("Erro ao cadastrar usuário!")
