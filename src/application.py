@@ -1,8 +1,8 @@
 from datetime import datetime
 
-from src.livro import Livro
-from src.usuario import Usuario
-from src.emprestimo import Emprestimo
+from livro import Livro
+from usuario import Usuario
+from emprestimo import Emprestimo
 
 class Aplication():
     '''Classe responsável pelos menus para interagir com o sistema'''
@@ -48,7 +48,7 @@ class Aplication():
                 case 1:
                     nome = str(input("Digite o nome do seu livro: "))
                     autor = str(input("Digite o nome do autor: "))
-                    data = str(input"Digite a data do livro: ")
+                    data = str(input("Digite a data do livro: "))
                     novo_livro = Livro(nome, autor, data)
                     novo_livro.criar_livro()
                     break
