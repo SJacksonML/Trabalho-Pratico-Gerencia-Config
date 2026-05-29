@@ -1,6 +1,6 @@
 import json
 
-class emprestimo():
+class Emprestimo():
 
     def __init__(self, usuario, livro, data_emprestimo, codigo):
         self.usuario = usuario
@@ -11,10 +11,10 @@ class emprestimo():
         print(f"Criando empréstimo do livro: {self.livro.nome} para o usuário: {usuario}.")
 
         emprestimo = {
-            "usuario": self.usuario
-            "livro": self.livro.nome
-            "data do empréstimo": self.data_emprestimo
-            "código do empréstimo"self.codigo
+            "usuario": self.usuario,
+            "livro": self.livro.nome,
+            "data do empréstimo": self.data_emprestimo,
+            "código do empréstimo": self.codigo,
         }
         try:
             with open("emprestimo.json", "w", encoding="utf-8") as arquivo:
