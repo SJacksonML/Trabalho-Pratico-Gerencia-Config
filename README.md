@@ -14,4 +14,5 @@ Trata-se de um simples programa de gerenciamento de biblioteca utilizando as té
 - **Icaro Cavalcante:**
 - **José Dhonatan:** O desenvolvimento do projeto, exigiu uma grande coordenação e disciplina para gerenciarmos oque cada coisa faz, para que tivessemos o meio de trabalho mais agil.
 - **Samuel Jackson:** O desenvolvimento exigiu muita comunicação entre as partes, uma vez que a nommenclatura das classes e métodos precisavam ser chamadas em outras branchs muito cedo. A ideia de realizar vários trabalhos em paralelo, onde os segmentos das branchs poucoo se distanciam da main, apesar de ser ágil, exige muita transparência durante o desenvolvimento.
-- **Sarah Mendes:**
+- **Sarah Mendes:** O desenvolvimento exigiu organização para gerenciar as partes do projeto, com integrações frequentes ao ramo principal. Isso auxiliou para o desenvolvimento ágil.
+
